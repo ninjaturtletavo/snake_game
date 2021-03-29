@@ -585,6 +585,7 @@ function getRandomNum() {
 
   // return Math.floor(Math.random() * (max - min + 1)) + min;
 
+  // simpler way to write?
   return Math.floor(Math.random() * 20); //
 }
 
@@ -728,7 +729,7 @@ function tick() {
 
 // starts the game looop
 function gameOn() {
-  startGame = setInterval(tick, 150);
+  startGame = setInterval(tick, 1000 / 10);
   return startGame;
 }
 

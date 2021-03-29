@@ -42,13 +42,33 @@
   border-radius: 50%;
 }
 
-#app .points {
+#app .title {
   display: grid;
   grid-row: 1;
-  grid-column: 2/3;
+  grid-column: 1/4;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 45px;
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgba(238, 135, 0, 0.932),
+    rgb(60, 255, 0)
+  ); */
+}
+
+#app .points {
+  display: grid;
+  grid-row: 3;
+  grid-column: 1/4;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: #000000ce;
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgba(238, 135, 0, 0.932),
+    rgb(60, 255, 0)
+  ); */
 }
 
 .leaderboard {
@@ -197,15 +217,17 @@
 .modal input,
 .modal textarea {
   background: #ddd;
-  padding: 5px;
+  padding: 15px;
   width: 45%;
   font-size: 25px;
-  margin-bottom: 10px;
 }
 
 .modal button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   border-radius: 10%;
   width: 80%;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
 }
